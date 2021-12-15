@@ -547,7 +547,7 @@ class ProtoMatcher : public ProtoMatcherBase {
   }
 
   virtual void DeleteExpectedProto(
-      const google::protobuf::Message* expected) const {}
+      const google::protobuf::Message* /* expected */) const {}
 
   const std::shared_ptr<const google::protobuf::Message>& expected() const {
     return expected_;
